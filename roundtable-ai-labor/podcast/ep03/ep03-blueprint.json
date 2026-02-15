@@ -1,0 +1,137 @@
+{
+  "episode_number": 3,
+  "series_position": "FINALE",
+  "topic": "钱往哪放：当经济学变成政治学 — r>g时代的生存指南与终极拷问",
+  "source_blocks": ["Block 5: Financial Markets and Asset Allocation", "Block 6: The Deeper Questions"],
+
+  "characters": {
+    "host": {
+      "name": "李明",
+      "role": "host",
+      "personality_tags": ["curiosity-driven", "provocative", "grounding"],
+      "speaking_style": "窦文涛式 — 用普通人的问题戳穿专家的泡泡，善于把抽象概念拉回到'我妈怎么办'的层面。本集作为大结局，会更多追问终极问题，偶尔流露真实焦虑。",
+      "voice_id": "CN-Man-Beijing-V2"
+    },
+    "analyst": {
+      "name": "魏教授",
+      "role": "analyst",
+      "personality_tags": ["framework-builder", "data-anchored", "philosophically vulnerable"],
+      "speaking_style": "学院派但不迂腐。本集重大转折：承认自己的模型在Block 6里崩了——'蒸汽机替代了马，AI替代的是骑手'。会在终极问题面前展现罕见的谦卑。",
+      "voice_id": "suzhe-45bbbe54"
+    },
+    "trader": {
+      "name": "陈薇",
+      "role": "trader",
+      "personality_tags": ["pragmatic", "sharp-tongued", "existentially honest"],
+      "speaking_style": "实战派，话锋犀利。本集从投资建议逐渐滑向存在主义拷问。最后一句话是全系列的句号：'The spreadsheet is broken. Good luck.' 要让这句话有千钧之力。",
+      "voice_id": "gaoqing3-bfb5c88a"
+    }
+  },
+
+  "hook": {
+    "hook_angle": "上期聊完地缘政治格局，听众最大的问题就一个：所以钱到底往哪放？但答案可能比问题更吓人。",
+    "hook_script": "李明开场：上两期我们把世界拆了个遍——工作没了、中产死了、大国在抢算力。后台留言99%都在问同一个问题：'说了这么多，钱到底怎么办？'今天是大结局，我们不光要回答这个问题，还要面对一个更恐怖的可能性——也许这个问题本身就问错了。因为当r大于g成为铁律，当GDP变成坏掉的仪表盘，你以为你在理财，其实你在做政治选择。"
+  },
+
+  "segments": [
+    {
+      "segment_number": 1,
+      "segment_title": "r > g：这个时代的唯一公式",
+      "duration_minutes": 6,
+      "core_tension": "资本回报率结构性高于劳动回报率——这到底是暂时的还是永久的？如果是永久的，普通家庭该怎么办？",
+      "key_arguments": [
+        "r > g 是这个时代的方程式（Panel共识）",
+        "逃逸速度门槛~$2-3M流动资产（Victoria）",
+        "利润率上升是真实的但会自我吞噬——3-6年后劳动份额跌破50%需求崩溃（Panel共识）",
+        "从劳动收入转向资本所有权是家庭最重要的财务决策（Panel共识）"
+      ],
+      "energy_level": 3,
+      "pivot_question": "好，道理都懂——要从劳动者变成资本家。但具体买什么？"
+    },
+    {
+      "segment_number": 2,
+      "segment_title": "具体买什么：从比特币到烂尾楼",
+      "duration_minutes": 8,
+      "core_tension": "资产配置的具体分歧——BTC是保险还是投机？房地产是暴涨还是崩盘？政府采购是不是被低估的交易？",
+      "key_arguments": [
+        "BTC 2-5%配置作为财政主导/资本管制保险（Panel共识）+ 机器需求论（Wei）",
+        "房地产暴力分化：顶级资产vs中端崩盘20-40%（Panel）",
+        "CRE→银行→信贷传染链，60%概率（Wei）",
+        "Capex Air Pocket：GPU产能过剩→'破产时买机器人'（Victoria, 2002光纤剧本）",
+        "政府采购是被低估的交易（Wei）",
+        "不同财富层级的配置策略差异巨大（$1M vs $10M vs $100M）"
+      ],
+      "energy_level": 4,
+      "pivot_question": "等一下——我们聊了半天怎么赚钱，但有个问题我越想越不对劲：我们用来衡量赚没赚钱的那把尺子，是不是本身就坏了？"
+    },
+    {
+      "segment_number": 3,
+      "segment_title": "坏掉的仪表盘：当GDP不再衡量财富",
+      "duration_minutes": 7,
+      "core_tension": "AI让生产成本趋近于零，GDP反而缩小——我们到底变富了还是变穷了？金融体系建立在名义数字上，如果分母被拆了怎么办？",
+      "key_arguments": [
+        "GDP是坏掉的高度计——衡量的是油耗不是高度（Wei）",
+        "技术通缩 vs 货币通胀的笼中格斗（Victoria）",
+        "商品价格→0，资产价格→∞，法币失去意义（Victoria）",
+        "社会可以物质上更富有但政治上更难治理（Samir）",
+        "维基百科问题的文明级放大（Wei）"
+      ],
+      "energy_level": 3,
+      "pivot_question": "所以如果经济学的尺子坏了，那经济学本身呢？我们三个在这聊的所有框架——还管用吗？"
+    },
+    {
+      "segment_number": 4,
+      "segment_title": "大脱钩：当经济学变成政治学",
+      "duration_minutes": 7,
+      "core_tension": "250年来生产和分配通过劳动挂钩——AI切断了这个链接。经济学分裂为工程优化和政治分配两个学科。我们到底在讨论投资还是在讨论政治？",
+      "key_arguments": [
+        "大脱钩：生产自主化（资本密集）、分配政治化（国家密集）——回到食利者经济（Wei）",
+        "经济学分裂为宏观工程学和政治分配学（Wei）",
+        "三大定律的总结性回顾（Panel共识）",
+        "失落的一代是代价——55岁精算师的30年经验变成$20/月订阅（Panel）",
+        "同样的技术，不同的政治选择，截然相反的结果（Law 2）"
+      ],
+      "energy_level": 5,
+      "pivot_question": "那最后一个问题——如果这一切都是真的，你们两位，作为一个学者和一个交易员，晚上睡得着吗？"
+    },
+    {
+      "segment_number": 5,
+      "segment_title": "终极拷问：睡前的那个问题",
+      "duration_minutes": 7,
+      "core_tension": "每个人最大的认知转变是什么？模型在哪里崩溃了？面对不确定性，诚实的回答是什么？",
+      "key_arguments": [
+        "Wei承认：混淆了任务自动化和流程增强——AI替代的是骑手不是马",
+        "Victoria承认：低估了通缩速度——在做空法币衡量价值的能力",
+        "入门级侵蚀=能力危机——自动化初级工作但不重新设计学徒制（Samir）",
+        "Victoria的最终组合：30%数字垄断/20%物理稀缺/20%管辖权对冲/30%现金/0%企业中产",
+        "The spreadsheet is broken. Good luck.（系列终句）"
+      ],
+      "energy_level": 4,
+      "pivot_question": null
+    }
+  ],
+
+  "climax": {
+    "climax_segment": 4,
+    "clash_description": "魏教授提出'大脱钩'——250年的生产-分配链条被AI切断，经济学作为学科正在分裂。陈薇反击：你说的这些我都同意，但你的解决方案在哪？魏教授承认没有。李明追问三大定律——'中间已死、分配为王、失落一代是代价'——这到底是分析还是预言？三人在'我们是否对这一代人有道德亏欠'上产生真实的、无法调和的分歧。"
+  },
+
+  "ending": {
+    "ending_style": "cliffhanger",
+    "ending_hook": "没有下一集——这是大结局。但最后一句话本身就是一个开始。",
+    "takeaway_for_audience": "你以为你在听一档投资节目，但你刚刚听完的是一堂政治经济学课。你的每一个理财决定，本质上都是一次政治投票。The spreadsheet is broken. Good luck."
+  },
+
+  "tangent_slots": [
+    {
+      "after_segment": 1,
+      "tangent_topic": "逃逸速度$2-3M——这个数字在中国语境下意味着什么？北京一套房算不算？",
+      "max_duration": 2
+    },
+    {
+      "after_segment": 3,
+      "tangent_topic": "如果AI拍一部好莱坞级别电影只要$100，GDP缩了但人更幸福了——那股市怎么定价？",
+      "max_duration": 2
+    }
+  ]
+}
