@@ -1,0 +1,127 @@
+{
+  "episode_id": "ep01",
+  "topic": "AI来了，中产阶级完蛋了？— 当机器开始抢白领的饭碗",
+
+  "characters": {
+    "host": {
+      "name": "李明",
+      "role": "主持人",
+      "personality_tags": ["好奇", "接地气", "敢说不懂", "控场高手"],
+      "speaking_style": "窦文涛式：用大白话问尖锐问题，善于把学术概念翻译成生活语言。口头禅：'等等我没跟上'、'你这话什么意思'、'我替听众问一句'。偶尔自嘲。"
+    },
+    "analyst": {
+      "name": "魏教授",
+      "role": "学院派",
+      "personality_tags": ["数据控", "框架思维", "偶尔固执", "被反驳时会沉默思考"],
+      "speaking_style": "Dr. Wei映射：喜欢从生产函数和历史类比出发，说话带点学究气但不枯燥。会用'从经济学角度看'开头，但也会在被戳中要害时承认'这个我确实没想到'。偶尔冒英文术语。"
+    },
+    "trader": {
+      "name": "陈薇",
+      "role": "实战派",
+      "personality_tags": ["泼辣", "直觉强", "语出惊人", "偶尔极端但有道理"],
+      "speaking_style": "Victoria Chen映射：说话快、直接、带攻击性。喜欢用具体案例和客户故事。口头禅：'说白了'、'你信不信'、'我跟你讲个真事'。会用金融黑话但马上自己翻译。"
+    }
+  },
+
+  "hook": {
+    "hook_angle": "你花了20年爬到年薪50万的位置，结果一个月20块的订阅就能替代你——这不是科幻，正在发生。",
+    "hook_script": "主持人抛出：我有个朋友，某大厂的中层，上周跟我说他们部门30个分析师砍到8个，不是因为业绩不好，是因为AI干得又快又好。他说了一句话让我睡不着觉：'我花了15年学的东西，现在是一个月20块钱的订阅。'今天我们就来聊这个——AI来了，中产阶级是不是真的完蛋了？"
+  },
+
+  "segments": [
+    {
+      "segment_id": 1,
+      "segment_title": "钱去哪了——需求塌陷的逻辑",
+      "duration_minutes": 7,
+      "core_tension": "收入没有消失，只是集中了——集中到不花钱的人手里。经济学家说市场会自我修复，但修复的时间够你失业破产三回了。",
+      "key_arguments": [
+        {"source": "Victoria", "point": "收入不是消失了，是集中了然后被存起来，变成资产价格而不是消费需求"},
+        {"source": "Wei", "point": "价格机制会恢复实际购买力——如果你认为需求会崩溃，告诉我钱消失在哪了"},
+        {"source": "Samir", "point": "白领失去工资收入，更便宜的软件付不了房租——非贸易品才是命门"},
+        {"source": "Victoria", "point": "萨伊定律'从来不是定律'——长期可能成立，但转型期间人们会丢房子、民粹上台"}
+      ],
+      "energy_level": 3,
+      "pivot_question": "好，就算钱没消失只是换了口袋——那被掏空的那些人怎么办？他们的工作还在不在？"
+    },
+    {
+      "segment_id": 2,
+      "segment_title": "杀伤区：年薪50万到150万的人最危险",
+      "duration_minutes": 8,
+      "core_tension": "中产认知工作者是AI替代的精确打击区。不是底层先倒，是中间先塌。",
+      "key_arguments": [
+        {"source": "Victoria", "point": "$80K-$200K收入段是'杀伤区'——主管/分析师/经理层到2032年缩到不足总就业10%"},
+        {"source": "Victoria", "point": "'会有新工作'是经济学的'thoughts and prayers'——500人被替代省下的2800万给了股东，不是新岗位"},
+        {"source": "Wei", "point": "杰文斯悖论：便宜的认知劳动力会增加对'经过验证的决策'的总需求——85%信心会有新工作"},
+        {"source": "Wei", "point": "但只有40%信心新工作的薪资能匹配当前中产预期"},
+        {"source": "Samir", "point": "'静默退化'模型——宏观数据很好看，但工作质量、职业通道、工时稳定性在暗中侵蚀"}
+      ],
+      "energy_level": 4,
+      "pivot_question": "那蓝领呢？是不是学个水管工反而比读MBA安全？"
+    },
+    {
+      "segment_id": 3,
+      "segment_title": "蓝领避风港？别高兴太早",
+      "duration_minutes": 5,
+      "core_tension": "蓝领暂时安全是因为机器人还没跟上，不是因为人比机器强。5-8年窗口期。",
+      "key_arguments": [
+        {"source": "panel", "point": "蓝领5-8年相对安全，但面临双重挤压：被裁白领涌入+机器人进步"},
+        {"source": "Wei", "point": "鲍莫尔效应反转：AI让top 20%更有钱，他们会竞价抬高不可自动化的人类服务价格"},
+        {"source": "Victoria", "point": "'监管壁垒论'——真正的护城河是执照和行会保护，不是技能本身。投资监管壁垒，别投资技能"}
+      ],
+      "energy_level": 3,
+      "pivot_question": "所以我们面对的不只是失业问题——是一整代人的问题？"
+    },
+    {
+      "segment_id": 4,
+      "segment_title": "新飞特族：高学历、高负债、高愤怒",
+      "duration_minutes": 7,
+      "core_tension": "日本的'飞特族'现象会不会在全球重演？一群聪明、受过教育、背着债、找不到匹配工作的人——他们会是历史上最危险的人群。",
+      "key_arguments": [
+        {"source": "panel", "point": "~58%概率出现持续性的高学历半就业阶层"},
+        {"source": "Victoria", "point": "'一个愤怒的、受过教育的、半失业的、没什么可输的群体，是资本保值历史上最危险的人群'"},
+        {"source": "Wei", "point": "'学历虚无主义'——花4-7年读书结果对应的岗位不存在了"},
+        {"source": "Samir", "point": "入门级工作消失=能力培养危机——自动化初级工作等于掏空高级人才的培养通道"}
+      ],
+      "energy_level": 5,
+      "pivot_question": "那发钱行不行？UBI，全民基本收入——政府兜底不就完了？"
+    },
+    {
+      "segment_id": 5,
+      "segment_title": "UBI：保护费还是遮羞布？",
+      "duration_minutes": 6,
+      "core_tension": "UBI解决了吃饭问题，但解决不了尊严问题。你不能模拟'被经济需要'的感觉。",
+      "key_arguments": [
+        {"source": "Victoria", "point": "UBI是给S&P 500交的保护费——国家发钱给老百姓，老百姓转手花在亚马逊和沃尔玛"},
+        {"source": "Wei", "point": "'你不能模拟被经济需要的尊严感'——收入≠意义"},
+        {"source": "panel", "point": "'动物园假说'——吃饱了、住暖了，但被圈养了、没有目的"},
+        {"source": "Victoria", "point": "25%概率的'美丽新世界'场景——没人反抗，大家只是退出了"}
+      ],
+      "energy_level": 4,
+      "pivot_question": null
+    }
+  ],
+
+  "climax": {
+    "climax_segment": 4,
+    "clash_description": "魏教授坚持'新工作会出现'的信念被陈薇用'thoughts and prayers'类比猛烈攻击，主持人追问'你说85%信心有新工作，但只有40%信心薪资能匹配——这不就是说大概率越来越穷吗？'魏教授被迫承认：如果AI把所有人类产出的价值压到人类生存成本以下，比较优势就崩了，经济学变成政治学。"
+  },
+
+  "ending": {
+    "ending_style": "open_question",
+    "ending_hook": "下一期我们聊：政府到底来不来得及救场？从监管卢德主义到新冷战——当白领开始反击。",
+    "takeaway_for_audience": "回去看看你的工作——不是问'AI能不能做'，而是问'老板有没有理由还付你这个薪水做这件事'。如果答案犹豫了，那个犹豫就是你的预警信号。"
+  },
+
+  "tangent_slots": [
+    {
+      "after_segment": 2,
+      "tangent_topic": "我们父母那代人说'好好读书就有好工作'——这个社会契约是不是已经失效了？",
+      "max_duration": 2
+    },
+    {
+      "after_segment": 4,
+      "tangent_topic": "日本飞特族的真实生活——便利店打工、网吧过夜、没有社保，这会不会是我们的未来？",
+      "max_duration": 2
+    }
+  ]
+}
