@@ -1,0 +1,136 @@
+{
+  "episode_id": "ep02",
+  "topic": "白领反击战：从监管卢德主义到新冷战 — 当中产阶级开始用法律砸机器",
+  "source_blocks": ["Block 3: Social and Political Consequences", "Block 4: The Geopolitical Dimension"],
+
+  "characters": {
+    "host": {
+      "name": "李明",
+      "role": "主持人",
+      "personality_tags": ["好奇", "接地气", "敢说不懂", "控场高手"],
+      "speaking_style": "窦文涛式：用大白话问尖锐问题，善于把学术概念翻译成生活语言。口头禅：'等等我没跟上'、'你这话什么意思'、'我替听众问一句'。偶尔自嘲。"
+    },
+    "analyst": {
+      "name": "魏教授",
+      "role": "学院派",
+      "personality_tags": ["数据控", "框架思维", "偶尔固执", "被反驳时会沉默思考"],
+      "speaking_style": "喜欢从制度经济学和历史类比出发，说话带学究气但不枯燥。会用'从政治经济学角度看'开头，但也会在被戳中要害时承认'这个我确实没想到'。本期更多关注地缘政治和制度比较。"
+    },
+    "trader": {
+      "name": "陈薇",
+      "role": "实战派",
+      "personality_tags": ["泼辣", "直觉强", "语出惊人", "偶尔极端但有道理"],
+      "speaking_style": "说话快、直接、带攻击性。喜欢用具体案例和客户故事。口头禅：'说白了'、'你信不信'、'我跟你讲个真事'。本期更关注资本流动和政治博弈的投资含义。"
+    }
+  },
+
+  "hook": {
+    "hook_angle": "上期说中产完蛋了，但中产可不是等死的——他们开始用法律、法规和官僚体系反击AI了。问题是，这种反击救得了自己，还是会把整个国家拖下水？",
+    "hook_script": "主持人衔接上期：上期我们聊完，我收到好多留言说'那怎么办啊'。还真有人在办——不是上街砸机器，是穿着西装去法院告状、去国会游说、用监管条例把AI堵在门外。欧洲搞了AI Act，美国律师协会在搞AI执业限制，连会计师行会都在想办法。今天咱们就聊——白领的反击战，打得赢吗？代价是什么？"
+  },
+
+  "segments": [
+    {
+      "segment_id": 1,
+      "segment_title": "监管卢德主义：白领怎么打回去",
+      "duration_minutes": 7,
+      "core_tension": "白领反击不上街——他们用法律、执照、法规构筑壁垒。75%概率发生。但这种反击是在保护人还是在保护特权？",
+      "key_arguments": [
+        {"source": "panel", "point": "白领反击比蓝领民粹更危险——政治素养更高、人脉更广、更习惯社会地位"},
+        {"source": "Victoria", "point": "'官僚叛乱'——武器化监管、法院、行业协会来减缓AI部署"},
+        {"source": "Samir", "point": "'许可摩擦'——不是禁止AI，而是让AI通过的门槛高到用不了"},
+        {"source": "Wei", "point": "监管卢德主义是'增长通缩、成本通胀'——行会阻止AI改进服务的同时维持高价"}
+      ],
+      "energy_level": 4,
+      "pivot_question": "好，白领在砌墙。但如果墙砌太高，会不会把自己也堵死了？"
+    },
+    {
+      "segment_id": 2,
+      "segment_title": "UBI：保护费还是动物园门票",
+      "duration_minutes": 7,
+      "core_tension": "UBI 83%概率实施，但它解决的是吃饭问题不是尊严问题。当工作不再是身份认同的来源，'意义危机'怎么办？",
+      "key_arguments": [
+        {"source": "Victoria", "point": "UBI是给S&P 500交的保护费——国家发钱给老百姓让他们继续给亚马逊贡献营收"},
+        {"source": "Wei", "point": "你不能模拟被经济需要的尊严感——收入≠意义"},
+        {"source": "panel", "point": "动物园假说：吃饱了、住暖了，但被圈养了、没有目的"},
+        {"source": "Samir", "point": "分配速度vs响应速度——关键不是不平等的水平，而是恶化的速度超过政策的速度"},
+        {"source": "Victoria", "point": "25%概率的'美丽新世界'：没人反抗，大家只是退出了——基本品便宜，娱乐无限"}
+      ],
+      "energy_level": 3,
+      "pivot_question": "说到这儿——如果一个国家选择不砌墙，全面拥抱AI呢？"
+    },
+    {
+      "segment_id": 3,
+      "segment_title": "叛逃触发器：谁先放开谁就赢？",
+      "duration_minutes": 8,
+      "core_tension": "魏教授的杀手问题：如果中国或新加坡绕过所有行业保护、全面拥抱AI，西方的监管卢德主义是不是等于自杀？这是本期最高冲击力的尾部风险。",
+      "key_arguments": [
+        {"source": "Wei", "point": "叛逃触发器：一个大国'全面AI化'，以近零成本出口智能服务，西方监管保护就变成绞索"},
+        {"source": "Victoria", "point": "这会加速资本外逃——钱会流向允许AI自由部署的地方"},
+        {"source": "Samir", "point": "这把'有序转型'的时间表从几十年压缩到几年"},
+        {"source": "panel", "point": "~55%概率冷战2.0——世界沿AI能力线一分为二"}
+      ],
+      "energy_level": 5,
+      "pivot_question": "那我们来看看各个玩家——美国、中国、欧洲，谁的牌好？"
+    },
+    {
+      "segment_id": 4,
+      "segment_title": "大国博弈：美国赌命、中国走钢丝、欧洲当博物馆",
+      "duration_minutes": 8,
+      "core_tension": "华盛顿共识投资组合已死。美国是制度存活的杠杆赌注，中国不可投资，欧洲保和平丢增长。",
+      "key_arguments": [
+        {"source": "Victoria", "point": "欧洲是'全世界的博物馆/养老院'——AI Act保社会和平，代价是经济活力"},
+        {"source": "Wei", "point": "15%'欧洲弯道超车'场景：AI Act若逼出开放互操作标准，TFP扩散可能比美国围墙花园更好"},
+        {"source": "Victoria", "point": "中国'不可投资'——0%配置给长期家族资本"},
+        {"source": "panel", "point": "中国只有~32%概率成功管理转型——3亿+认知工作者面临冲击"},
+        {"source": "Wei", "point": "'认知依附'理论——全球北方拥有权重和数据中心，南方沦为不拥有智能的消费者"},
+        {"source": "Victoria", "point": "新兴市场主权违约潮2028-2030——'只买有石头和瓦特的国家'"}
+      ],
+      "energy_level": 4,
+      "pivot_question": "那税怎么收？钱跑了怎么办？"
+    },
+    {
+      "segment_id": 5,
+      "segment_title": "收尾：新封建秩序与半导体海峡",
+      "duration_minutes": 5,
+      "core_tension": "半导体供应链是新的霍尔木兹海峡。台积电和ASML的战略重要性堪比石油。全球税收协调几乎不可能。",
+      "key_arguments": [
+        {"source": "Samir", "point": "税务执法越来越通过支付通道、云合约、API审计实现——不靠法律条文靠技术可观测性"},
+        {"source": "panel", "point": "财富税打中产（200万-2000万），打不到顶层（5亿+）"},
+        {"source": "Victoria", "point": "新封建投资组合：买城堡（算力/IP），对冲农民起义（做空社会波动），持有领主需要的资源（能源/矿产）"},
+        {"source": "panel", "point": "~23%概率十年内爆发大国动能冲突——半导体是#1地缘政治爆点"}
+      ],
+      "energy_level": 3,
+      "pivot_question": null
+    }
+  ],
+
+  "climax": {
+    "climax_segment": 3,
+    "clash_description": "魏教授抛出'叛逃触发器'——如果中国全面放开AI，西方监管就是自杀。陈薇激烈同意但角度不同——她说资本已经在用脚投票了，'你们还在讨论该不该限制AI，钱已经去新加坡了'。李明追问：'那监管卢德主义到底是保护还是慢性自杀？'三人陷入真正的两难——不保护，中产崩溃；保护，国家竞争力崩溃。无解。"
+  },
+
+  "ending": {
+    "ending_style": "cliffhanger",
+    "ending_hook": "下一期我们聊钱——r>g到底意味着什么？你的房子、你的股票、你的比特币，在这个新世界里值多少？",
+    "takeaway_for_audience": "问自己一个问题：你现在做的事，是在砌墙还是在翻墙？监管卢德主义保得了一时，保不了一世。但不保护，你又拿什么撑过转型期？"
+  },
+
+  "tangent_slots": [
+    {
+      "after_segment": 1,
+      "tangent_topic": "美国律师为什么是最早反击的？——因为他们本来就是监管的制定者和受益者",
+      "max_duration": 2
+    },
+    {
+      "after_segment": 2,
+      "tangent_topic": "日本和韩国的'躺平'现象——当整个社会放弃了upward mobility之后发生了什么",
+      "max_duration": 2
+    },
+    {
+      "after_segment": 4,
+      "tangent_topic": "印度的IT外包——3亿人的饭碗被认知依附一锅端",
+      "max_duration": 2
+    }
+  ]
+}
