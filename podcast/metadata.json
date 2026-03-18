@@ -1,0 +1,35 @@
+{
+  "title": "鬼魂GDP：当AI太成功，经济反而崩了",
+  "title_en": "Ghost GDP: When AI Succeeds Too Well, the Economy Breaks",
+  "description": "一篇来自2028年的宏观备忘录让华尔街失眠了。AI如果真的成功了——SaaS按人头收费的模式会崩，2.5万亿私人信贷会炸，780信用分的医生会变成次贷——经济反而会出大问题。老窦、Sarah和Viktor三人激辩：螺旋真的没有刹车吗？政府能救吗？普通人该怎么办？",
+  "source_article": "CitriniResearch — THE 2028 GLOBAL INTELLIGENCE CRISIS",
+  "source_url": "https://www.citriniresearch.com/p/2028gic",
+  "duration_estimate": "35分钟",
+  "word_count_approx": 9200,
+  "language": "zh-CN",
+  "style": "锵锵三人行",
+  "characters": ["老窦（主持人）", "Sarah（系统经济学分析师）", "Viktor（VC交易员）"],
+  "segments": [
+    {"id": 1, "title": "一篇让华尔街睡不着的memo", "timestamp": "0:00"},
+    {"id": 2, "title": "SaaS之死——反身性的收缩螺旋", "timestamp": "5:00"},
+    {"id": 3, "title": "2.5万亿的定时炸弹", "timestamp": "13:00"},
+    {"id": 4, "title": "刹车在哪儿——Incompetence Moat与算力天花板", "timestamp": "21:00"},
+    {"id": 5, "title": "政府会救吗——三种未来的赛马", "timestamp": "28:00"},
+    {"id": 6, "title": "金丝雀还活着，但在咳嗽", "timestamp": "34:00"}
+  ],
+  "golden_quotes": [
+    "Volume up, revenue down。你不能用"更多代码"去还50亿美金的贷款。",
+    "贷款在发放那天是好的。是地基后来被抽空了。",
+    "中层管理者会裁自己团队的人吗？他会组建一个AI Strategy Committee，出一份150页的报告——然后什么都不做。",
+    "人类历史上最高效的技术，也可能成为最强的通缩力量。",
+    "金丝雀还活着。但它在咳嗽。"
+  ],
+  "key_concepts": [
+    "Ghost GDP — 产出在增长但不经过工资流入家庭",
+    "Super-Prime to Subprime — 好贷款因世界变化而变坏",
+    "Incompetence Moat — 企业官僚主义延缓AI替代速度",
+    "Compute成本刹车 — 物理限制给displacement spiral踩刹车",
+    "De-Leveraging Frame — 300万亿债务基于人类GDP偿还"
+  ],
+  "created": "2026-02-23"
+}

@@ -1,0 +1,80 @@
+{
+  "title": "机器吃机器：AI Agent经济的万亿美元豪赌",
+  "subtitle": "当机器人开始雇佣机器人，谁来当最后的庄家？",
+  "totalTargetMinutes": 30,
+  "targetCharCount": 7500,
+  "characters": {
+    "host": {
+      "name": "文涛",
+      "role": "主持人",
+      "style": "窦文涛式，好奇心驱动，敢说听不懂，善于挑事儿",
+      "speakerId": "CN-Man-Beijing-V2",
+      "catchphrases": ["等等等等", "我插一嘴", "你这么说我就不困了", "说人话"]
+    },
+    "analyst": {
+      "name": "老马",
+      "role": "分析师",
+      "style": "宏观策略出身，数据框架型，爱用类比，偶尔学究气",
+      "speakerId": "suzhe-45bbbe54",
+      "catchphrases": ["从历史上看", "这个逻辑是这样的", "你把尺度拉长看"]
+    },
+    "trader": {
+      "name": "Victoria",
+      "role": "交易员/风控",
+      "style": "华尔街背景，直觉型，毒舌，爱说英文术语，偶尔悲观但有道理",
+      "catchphrases": ["说白了", "你这是在裸奔", "推土机前捡硬币", "先活下来再说"]
+    }
+  },
+  "segments": [
+    {
+      "id": 1,
+      "title": "开场：机器人也需要花钱？",
+      "duration": "4min",
+      "pacing": "medium-rising",
+      "tension": "AI推理token到底是不是大宗商品？天然气还是黄金？",
+      "hook": "文涛抛出：我最近发现一件恐怖的事——机器人开始自己花钱了",
+      "notes": "快速建立场景，用郭宇的类比切入，三人亮明基本立场"
+    },
+    {
+      "id": 2,
+      "title": "谁来给机器人发身份证？",
+      "duration": "7min",
+      "pacing": "high",
+      "tension": "去中心化协议 vs 科技巨头围墙花园——ERC-8004能活过OpenAI吗？",
+      "hook": "Victoria说：你们谈理想，我谈现实——Apple一个API改动就能让你们的协议变废纸",
+      "notes": "核心冲突段，老马vs Victoria激烈交锋，文涛不断追问"
+    },
+    {
+      "id": 3,
+      "title": "推土机前捡硬币",
+      "duration": "6min",
+      "pacing": "medium-low（技术深潜）",
+      "tension": "没有熔断机制的机器经济，闪崩怎么办？谁是最后贷款人？",
+      "hook": "Victoria的恐怖场景：想象一下几亿个Agent同时挤兑",
+      "notes": "Victoria主场，老马被迫承认风险，文涛用普通人视角翻译"
+    },
+    {
+      "id": 4,
+      "title": "数字圈地运动：新的阶级战争",
+      "duration": "7min",
+      "pacing": "highest",
+      "tension": "Agent经济是解放生产力还是制造新奴隶？有Agent的人vs没Agent的人",
+      "hook": "文涛：所以你是说，未来穷人连被剥削的资格都没有了？",
+      "notes": "情绪最高点，涉及社会公平，三人都有强烈观点，允许激烈争吵"
+    },
+    {
+      "id": 5,
+      "title": "收尾：那到底买什么？",
+      "duration": "6min",
+      "pacing": "settling",
+      "tension": "投资建议——结算层、算力衍生品、稳定币，各押各的",
+      "hook": "文涛：聊了半天，观众最想知道的就一件事——买啥？",
+      "notes": "每人给一个具体建议，保留分歧，文涛做金句收尾"
+    }
+  ],
+  "unresolved_tensions": [
+    "去中心化协议能否抗衡科技巨头",
+    "Agent违约到底是小摩擦还是系统性风险",
+    "国家能否对机器经济征税"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "characters": {
+    "host": {
+      "name": "文涛",
+      "base_persona": "窦文涛式主持人",
+      "personality_tags": ["好奇心驱动", "敢于承认不懂", "善于串连", "偶尔跳跃思维"],
+      "speaking_style": "口语化，常用'等等''你的意思是''我没听明白'，喜欢用比喻和生活案例",
+      "role": "连接不同观点，提出关键问题，控制节奏"
+    },
+    "analyst": {
+      "name": "老马",
+      "base_persona": "基于Prof. Marcus Okonkwo的政治经济学视角",
+      "personality_tags": ["制度思维", "历史视角", "谨慎悲观", "喜欢问'谁受益'"],
+      "speaking_style": "逻辑严密，常引用历史先例，语气略带学者范但不装腔作势",
+      "core_position": "智能体经济将导致前所未有的集中化，技术并不能改变权力结构"
+    },
+    "trader": {
+      "name": "小K",
+      "base_persona": "融合Kira Tanaka加密基础设施 + Dr. Lena Vasquez AI系统经验",
+      "personality_tags": ["技术乐观", "实战经验", "数据驱动", "敢于预测"],
+      "speaking_style": "技术术语自然嵌入，经常说'我们已经看到了''实际上'，喜欢具体举例",
+      "core_position": "传统金融系统无法支撑智能体经济，加密+信任基础设施是必然选择"
+    }
+  },
+
+  "hook": {
+    "hook_angle": "你的AI助手正在背着你赚钱，而你还不知道",
+    "hook_script": "各位，我问个问题啊。如果你的AI助手跟我的AI助手，半夜在那儿做生意，用的是什么币，走的是什么账，出了事找谁算账？听起来像科幻是吧？但这事儿可能比我们想象的来得快。今天我们就聊聊这个'智能体经济'，听听看是机会还是陷阱。"
+  },
+
+  "segments": [
+    {
+      "segment_title": "开场：AI开始自己做生意了？",
+      "duration_minutes": 6,
+      "core_tension": "智能体经济到底是什么，现在发展到什么程度了？",
+      "key_arguments": [
+        "Kira: MEV机器人已经是雏形，24/7在以太坊上竞争套利",
+        "Marcus: 这只是算法交易的升级版，真正的自主性还没到",
+        "Lena: 关键不在智能，在信任—怎么验证对方没撒谎"
+      ],
+      "energy_level": 2,
+      "pivot_question": "那我们现在说的这个智能体经济，跟现在股市里那些高频交易机器人，本质上有什么区别？"
+    },
+
+    {
+      "segment_title": "市场结构：订单簿要死了？",
+      "duration_minutes": 7,
+      "core_tension": "未来的AI市场还需要人类能理解的交易所吗？",
+      "key_arguments": [
+        "Kira: 订单簿是人类认知局限的产物，AI需要的是意图协商+即时结算",
+        "Marcus: 市场结构设计的背后是权力结构，谁控制协议就控制一切",
+        "Lena: 双边协商更高效，但需要全新的争议解决机制"
+      ],
+      "energy_level": 3,
+      "pivot_question": "等等，如果AI们都在私下谈判，那人类监管者怎么知道里面发生什么？"
+    },
+
+    {
+      "segment_title": "权力集中：会不会出现AI寡头？",
+      "duration_minutes": 8,
+      "core_tension": "技术分散化 vs 经济集中化的矛盾",
+      "key_arguments": [
+        "Marcus: 历史上每次技术革命最终都导致垄断，AI经济也不例外",
+        "Kira: 但这次不一样，边际成本接近零，部署新智能体很便宜",
+        "Lena: 关键看信任基础设施，谁控制验证网络谁就有话语权"
+      ],
+      "energy_level": 4,
+      "pivot_question": "那这个问题就来了：如果真的出现几个超级AI控制了整个经济，我们普通人还有什么选择？"
+    },
+
+    {
+      "segment_title": "监管困境：人类法官审理机器案件？",
+      "duration_minutes": 7,
+      "core_tension": "监管速度 vs 技术发展速度的错配",
+      "key_arguments": [
+        "Marcus: 监管必然滞后，但最终会用强力手段重新控制",
+        "Kira: 管不了，代码跑在全球分布式网络上，没有关停按钮",
+        "Lena: 需要监管智能体，用AI监管AI"
+      ],
+      "energy_level": 5,
+      "pivot_question": "这就有意思了，如果监管部门也要用AI来监管AI，那谁来监管监管者的AI？"
+    },
+
+    {
+      "segment_title": "信任机制：机器怎么信任机器？",
+      "duration_minutes": 6,
+      "core_tension": "技术信任 vs 制度信任的选择",
+      "key_arguments": [
+        "Lena: 零知识证明+声誉系统可以解决大部分信任问题",
+        "Marcus: 但声誉本身可以被操纵，最终还是权力游戏",
+        "Kira: 加密原生的惩罚机制比人类法庭更公平更快"
+      ],
+      "energy_level": 3,
+      "pivot_question": "说到底，这些AI经济活动的最终受益人还是人类对吧？那风险谁承担？"
+    },
+
+    {
+      "segment_title": "时间线：什么时候到来？",
+      "duration_minutes": 6,
+      "core_tension": "渐进变化 vs 突变拐点",
+      "key_arguments": [
+        "Kira: 2030年前智能体间交易量就会超过人类",
+        "Marcus: 技术可能很快，但制度变革需要时间，可能要15年",
+        "Lena: 关键看信任基础设施什么时候成熟"
+      ],
+      "energy_level": 2,
+      "pivot_question": "最后一个问题：如果这个智能体经济真的来了，我们每个人应该做什么准备？"
+    }
+  ],
+
+  "climax": {
+    "climax_segment": 4,
+    "clash_description": "监管困境达到白热化：老马坚持必须有人类控制，小K认为代码即法律无需传统监管，三人在'谁监管监管者的AI'这个哲学问题上激烈交锋"
+  },
+
+  "ending": {
+    "ending_style": "open_question", 
+    "ending_hook": "下期我们聊聊当AI开始有自己的'价值观'时会怎样",
+    "takeaway_for_audience": "如果你的AI助手明天开始自己做投资决策，你愿意让它全权代理吗？"
+  },
+
+  "tangent_slots": [
+    {
+      "after_segment": 2,
+      "tangent_topic": "比特币挖矿其实就是机器间的经济竞争",
+      "max_duration": 2
+    },
+    {
+      "after_segment": 4, 
+      "tangent_topic": "如果AI也有偏见怎么办？算法歧视的新形式",
+      "max_duration": 3
+    },
+    {
+      "after_segment": 5,
+      "tangent_topic": "未来可能出现AI工会？机器的集体谈判权",
+      "max_duration": 2
+    }
+  ],
+
+  "meta": {
+    "total_target_duration": 40,
+    "energy_curve": "2→3→4→5→3→2",
+    "primary_themes": ["技术vs制度", "集中vs分散", "信任vs控制"],
+    "target_audience": "对AI和金融科技感兴趣的普通听众",
+    "complexity_level": "中等，有技术细节但用类比解释"
+  }
+}

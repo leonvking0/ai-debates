@@ -1,0 +1,115 @@
+{
+  "episode": {
+    "title": "鬼魂GDP：当AI太成功，经济反而崩了",
+    "format": "锵锵三人行风格圆桌",
+    "target_duration": "30-40分钟",
+    "target_word_count": "7500-10000字"
+  },
+  "characters": {
+    "老窦": {
+      "role": "主持人",
+      "personality": "好奇心爆棚，八卦但有深度，敢说没听懂，善于用生活化比喻翻译复杂概念",
+      "speech_patterns": ["这事儿", "等等我打断一下", "你给我说人话", "这不就是…", "我突然想到一个事儿"],
+      "function": "串联话题，制造冲突，替听众问蠢问题"
+    },
+    "Sarah": {
+      "role": "系统经济学分析师",
+      "personality": "框架思维，数据驱动，严谨但不学究，偶尔冷幽默，对Viktor的乐观保持礼貌怀疑",
+      "speech_patterns": ["从系统论角度看", "数据上来说", "这里有个关键区分", "我得纠正一下", "问题不在于方向，在于传导机制"],
+      "function": "提供分析框架，拆解因果链，做Viktor观点的最佳反对者"
+    },
+    "Viktor": {
+      "role": "VC实战派交易员",
+      "personality": "直觉型，敢下判断，偶尔极端，用一线案例说话，对学院派保持友好嘲讽",
+      "speech_patterns": ["说白了", "我跟你讲个真实的case", "这个market根本没price in", "你们学院派…", "我赌…"],
+      "function": "提供市场直觉和一线观察，挑战共识，制造戏剧张力"
+    }
+  },
+  "segments": [
+    {
+      "id": 1,
+      "title": "开场：一篇让华尔街睡不着的memo",
+      "duration": "5分钟",
+      "core_tension": "Citrini的2028危机预言：是真知灼见还是又一个末日论？",
+      "beats": [
+        "老窦引入话题：有人写了一篇从2028年穿越回来的宏观备忘录",
+        "Viktor表态：方向对但时间线压缩太狠",
+        "Sarah定调：机制是真的，但传导速度被高估了",
+        "老窦追问：那到底该不该怕？"
+      ],
+      "synthesis_hooks": ["文章核心论点", "方向正确但时间线是弱点"]
+    },
+    {
+      "id": 2,
+      "title": "SaaS之死：当你的客户裁员15%，你的收入也死15%",
+      "duration": "7分钟",
+      "core_tension": "seat-based模式的死亡螺旋 vs Jevons Paradox的反驳",
+      "beats": [
+        "Sarah解释反身性循环：客户用AI裁员→取消license→SaaS收入塌方",
+        "Viktor用Jevons Paradox反击：100倍代码=新市场爆发",
+        "Sarah精准反驳：互补vs替代，能源类比不成立",
+        "老窦翻译：就像外卖平台把餐厅搞死了，但外卖小哥的工资也在降",
+        "Viktor被迫承认：nominal GDP确实可能缩"
+      ],
+      "synthesis_hooks": ["seat-based SaaS模式死亡", "Jevons Paradox辩论", "Sarah赢了这一回合"]
+    },
+    {
+      "id": 3,
+      "title": "2.5万亿的定时炸弹：private credit怎么炸",
+      "duration": "8分钟",
+      "core_tension": "私人信贷→保险资产负债表→保单持有人，传导链有多脆弱？",
+      "beats": [
+        "老窦问：什么是private credit？为什么我该关心？",
+        "Sarah画传导链：PE收购SaaS公司→private credit融资→保险公司持有→你的保单",
+        "Viktor讲Zendesk案例：50亿美元的direct lending违约",
+        "关键概念：Super-Prime to Subprime——780信用分的放射科医生变次贷",
+        "老窦震惊：这不就是2008反过来吗？",
+        "Sarah修正：更可怕，因为贷款发放时是好的，是世界变了"
+      ],
+      "synthesis_hooks": ["private credit是引爆器", "Super-Prime to Subprime", "permanent capital传导链", "Zendesk Moment"]
+    },
+    {
+      "id": 4,
+      "title": "刹车在哪儿：Incompetence Moat和算力天花板",
+      "duration": "7分钟",
+      "core_tension": "技术扩散的现实摩擦 vs 边际定价的残酷逻辑",
+      "beats": [
+        "Viktor抛出Incompetence Moat：中层管理者不会裁自己的团队",
+        "Sarah承认有道理但反驳：市场定价看边际，不看平均",
+        "Viktor打出王牌：compute成本刹车——所有人同时自动化，GPU不够用",
+        "Sarah罕见让步：修正了自己的时间线",
+        "老窦总结：所以不是会不会发生，是多快发生",
+        "De-Leveraging Frame引入：300万亿全球债务需要人类GDP来偿还"
+      ],
+      "synthesis_hooks": ["Incompetence Moat", "compute成本是天然刹车", "De-Leveraging Frame"]
+    },
+    {
+      "id": 5,
+      "title": "政府会救吗：三种未来",
+      "duration": "6分钟",
+      "core_tension": "财政干预的意愿和能力之间的鸿沟",
+      "beats": [
+        "老窦设问：2008能救银行，这次能救程序员吗？",
+        "Sarah悲观：AI专项救助的政治共识比救银行难百倍",
+        "Viktor转向：政府会补贴AI，不会补贴失业者——中美军备竞赛压倒一切",
+        "三人分歧最大的时刻：财政空间 vs 政治意愿 vs 地缘逻辑",
+        "老窦追问经验检验：看第一次大规模tech失业时国会的反应速度"
+      ],
+      "synthesis_hooks": ["政策响应函数", "三种预判", "经验检验标准"]
+    },
+    {
+      "id": 6,
+      "title": "收尾：金丝雀还活着，但在咳嗽",
+      "duration": "5分钟",
+      "core_tension": "知道了这些，普通人和投资者该怎么办？",
+      "beats": [
+        "每人一个必看指标：初级岗位招聘率、SaaS net retention、tech高收益CDS",
+        "Viktor的交易：做多波动率，做空intermediation",
+        "Sarah的框架：分清金融危机（快）和劳动力危机（慢）",
+        "老窦替听众问：我就一普通人，该怎么办？",
+        "结尾金句：最高效的技术可能是最通缩的力量"
+      ],
+      "synthesis_hooks": ["actionable takeaways", "SHORT/LONG清单", "金丝雀还活着但在咳嗽"]
+    }
+  ]
+}

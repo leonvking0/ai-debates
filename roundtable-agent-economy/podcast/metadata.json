@@ -1,0 +1,41 @@
+{
+  "title": "机器吃机器：AI Agent经济的万亿美元豪赌",
+  "description": "当机器人开始自己花钱、自己雇人、自己套利，一个万亿美元的新经济正在诞生。但谁是赢家？是制定规则的协议方，还是掌握硬件的科技巨头？没有熔断机制的机器经济会不会在某天几秒钟内崩塌？三位嘉宾从宏观策略、风险管理和政治经济学三个角度激烈交锋。",
+  "duration_estimate": "28-32分钟",
+  "language": "zh-CN",
+  "style": "锵锵三人行",
+  "date": "2026-02-16",
+  "characters": [
+    {"name": "文涛", "role": "主持人", "speaker": "CN-Man-Beijing-V2"},
+    {"name": "老马", "role": "分析师", "speaker": "suzhe-45bbbe54"},
+    {"name": "Victoria", "role": "交易员", "speaker": "gaoqing3-bfb5c88a"}
+  ],
+  "segments": [
+    {"title": "机器人也需要花钱？", "timestamp": "00:00", "duration": "4min"},
+    {"title": "谁来给机器人发身份证？", "timestamp": "04:00", "duration": "7min"},
+    {"title": "推土机前捡硬币", "timestamp": "11:00", "duration": "6min"},
+    {"title": "数字圈地运动", "timestamp": "17:00", "duration": "7min"},
+    {"title": "那到底买什么？", "timestamp": "24:00", "duration": "6min"}
+  ],
+  "key_quotes": [
+    "这钱不是人花的，是机器人花的。",
+    "所以这玩意儿到底是天然气还是茅台？——现阶段更像茅台。",
+    "谁先定义Agent身份标准，谁就是未来机器经济的央行。",
+    "比2008快一万倍。从第一个违约到全网崩溃，可能就几秒。",
+    "欢迎来到机器世界的马太效应。",
+    "未来的贫富差距不是有钱没钱，是有Agent没Agent。",
+    "我押的是卖铲子的人。",
+    "你再说'拉长时间看'我把你麦拔了。"
+  ],
+  "tags": ["AI", "Agent经济", "加密货币", "ETH", "ERC-8004", "x402", "算力", "大宗商品", "风险管理", "贫富差距"],
+  "quality_scorecard": {
+    "naturalness": 8,
+    "info_density": 9,
+    "entertainment": 8,
+    "character_distinction": 9,
+    "pacing": 8,
+    "opening_hook": 9,
+    "closing_resonance": 8,
+    "overall": 8.4
+  }
+}

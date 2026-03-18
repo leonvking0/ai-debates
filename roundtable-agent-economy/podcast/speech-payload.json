@@ -1,0 +1,340 @@
+{
+  "scripts": [
+    {
+      "content": "诶我跟你们说个事儿啊，我最近看到一个数据，给我吓着了。就是那个x402协议，你们知道吧？一个礼拜，五十万笔交易，两千六百万美金。关键是——这钱不是人花的。是机器人花的。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "嗯这就是我一直——",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "等等我先把话说完。我就想问一个特别朴素的问题啊：机器人为什么要花钱？它又不吃饭。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "它吃算力啊。你每次让ChatGPT帮你写个东西，后面都是在烧GPU。现在的变化是，机器人开始自己做决定花这个钱了。不用你按按钮了。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "哦所以它就像一个自动花钱的秘书？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "比这复杂得多。你想啊，现在是一个Agent帮你干活，以后呢？Agent雇Agent。它觉得这活儿自己干不了，外包给另一个更专业的，自己掏钱。这链条一展开，每秒钟几亿笔交易都有可能。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "我天。那这个推理token，就是机器人的\"钱\"，它到底算什么东西？有人说它像大宗商品，你们觉得呢？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "对一半。它像天然气，不像黄金。为啥？天然气不能囤着不用，是消耗品，用完就没了。推理token也一样，你算一次消耗一次。而且跟天然气一样，边际成本在疯狂往下掉。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "但有个关键区别你漏了。天然气是标准的，一立方就是一立方。Token不是。GPT-5的一个token和开源模型的一个token，能一样吗？这里面有品牌溢价。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "嗯这点我后来想通了，你说得对。算力巨头会故意制造非标准化，维持技术地租。这个我认。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "哈，所以这玩意儿到底是天然气还是茅台？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "现阶段？更像茅台。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "好那我们聊下一个事儿。机器人要花钱，总得有个身份吧？我去银行开户得刷身份证，Agent呢？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "这就是ERC-8004在干的事。你可以理解为链上的Agent身份注册表。两周注册了两万多个Agent，增速很猛。每个Agent有个可验证的身份，其他Agent跟你做生意前可以查你信誉。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "听起来挺美。但我问你——OpenAI自己搞一套Agent ID呢？Apple在iOS里内置Agent身份管理呢？开发者选谁？",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "这不是二选一——",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "就是二选一。你看看互联网历史，每次开放协议跟封闭生态打，封闭赢了多少次？RSS死了，Google Reader死了，XMPP死了。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "哎她说这个我有感觉。微信就是最好的例子嘛，不需要什么开放协议，十几亿人就在里面了。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "但这次不一样。Agent经济天然是跨平台的。一个Agent不可能只在一个生态里干活，它要调用不同模型、不同服务、在不同链上结算。中心化ID反而是瓶颈。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "理论上。现实中呢？谁控制硬件入口谁就是爸爸。Apple的TEE、英伟达的GPU，这些才是身份的根信任。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "等一下，TEE是啥？说人话。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "芯片里的一个安全小黑屋。你的计算在里面跑，外面偷看不了。问题是钥匙在硬件厂商手里。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "那不就是Apple说了算？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "所以才需要去中心化身份做对冲啊。所有Agent的身份都在三五个巨头手里的话，它们随时可以关门。跟银行冻结账户一个道理。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "\"对冲\"我同意。但对冲品不等于主流产品。去中心化身份可能永远是个小众保险，不是主赛道。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "这话挺狠的。老马你怎么接？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "我不完全反驳。短期她可能对的。但三五年尺度上，Agent如果真变成经济主体，它们会自己选更开放的体系——活动范围更大，赚钱机会更多。效率引力最终胜出。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "效率引力在有护城河的地方是失灵的。你看AWS，十年了价格也没降到理论最低。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "我觉得这个争不出结果。但有一点我记住了——这事儿是在抢定义规则的权力。谁先定义Agent身份标准，谁就是未来机器经济的央行。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "对。定义标准的人收印花税。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "Victoria，你之前说了一句话特别形象，叫\"推土机前捡硬币\"。啥意思？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "就是说很多人在Agent经济里做微支付套利，每笔赚一丁点儿，但完全没有对冲。一旦出事，血本无归。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "什么叫出事？机器人还能跑路？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "还真能。你想啊，一个Agent在执行复杂任务，中间嵌套了十几层子Agent。突然算力延迟了，Gas费飙了，最外层的Agent钱不够了，停摆。但它上游还欠着一堆其他Agent的账。那些也停摆，然后它们的上游也停摆。毫秒级链式违约。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "这不就是金融危机嘛？2008年那种——",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "比2008快一万倍。雷曼倒下到AIG出事，中间还有几天呢。Agent经济里？从第一个违约到全网崩溃，可能就几秒。而且没有美联储救场。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "你把这事儿说得太吓人了吧。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "哪里吓人了？你告诉我，现在哪个协议有熔断机制？哪个L2有最后贷款人功能？",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "我仔细想过这个。链式违约是可能的。但重启一个Agent集群的成本可能低到可以忽略——算力在通缩，重启成本也在通缩。Agent违约更像低廉的运营磨损，不是系统性风险。电脑蓝屏了重启就完了。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "单个Agent是。几亿个同时蓝屏呢？",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "哎这画面太可怕了，几亿台电脑同时蓝屏……",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "还有更绝的。Agent经济里，响应速度就是信用。你慢了零点一秒，上游直接认为你准违约，踢出交易链，提前清算你。物理层面的信用歧视。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "嚯，\"慢\"都是罪？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "嗯……这点我没法反驳。低延迟等于信用，这个洞察很深。算力弱的Agent会被系统性歧视。像金融里信用评级低的公司，借贷成本更高。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "穷的Agent更穷，富的更富？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "欢迎来到机器世界的马太效应。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "说到贫富差距。这个Agent经济，对我们普通人到底意味着什么？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "杰文斯悖论。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "啊？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "就是推理成本越便宜，需求不是减少而是爆炸。电费便宜了人不会少用电，反而发明了空调、电动车、矿机。Agent也一样，成本降下来之后会冒出无数现在想象不到的应用。从这角度看，是巨大的增量。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "增量归增量。但谁吃到？",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "对啊这才是关键。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "现在已经有人用Agent做资本自我增殖了。有钱的买算力，部署一百个Agent帮他套利、做市、找投资机会。赚了钱再雇更多Agent。Agent军队越来越大。没钱的人？一个Agent都养不起。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "所以未来的贫富差距不是有钱没钱，是有Agent没Agent？",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "更准确说是有算力没算力。算力是新的生产资料。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "你们想悲观了。互联网刚出来也有人说信息鸿沟，结果呢？手机普及了，农村大妈也刷短视频。算力也会这样。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "大妈刷短视频跟华尔街用Agent做高频交易，能一样？工具一样不代表结果一样。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "嗯我插一句。我觉得这事儿像当年的圈地运动。英国那会儿地主把公共的地圈起来了，农民变无产阶级。现在如果算力被巨头和资本家圈起来——",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "但算力不是土地！土地有限，算力可以无限扩张。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "物理上可以扩。但谁控制扩张？英伟达、微软、谷歌。你自己造GPU？",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "啊这……",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "好我承认，短期内算力供给是寡头垄断。但边缘计算在发展，本地小模型在进步，未来手机上可能就能跑一个还行的Agent。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "\"未来\"。又是\"未来\"。你每次说不过就搬出\"拉长时间看\"。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "哈哈哈哈哈。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "拉长时间看很多问题会解决嘛！",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "也有很多人在等拉长时间的过程中破产了。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "好我总结啊。老马觉得Agent经济是大饼，越做越大，人人有份。Victoria觉得大饼是大了，但切蛋糕的刀在少数人手里。我个人偏Victoria，因为历史上每次技术革命都是先加剧不平等再慢慢扩散。但\"慢慢\"可能是一两代人。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "聊了这么多，观众最想听一件事——买啥？一人一个。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "逻辑很简单。不管哪个模型赢，不管Agent怎么打，所有交易最终要结算。结算层确定性最高。做多ETH，三年以上。它不是智能合约平台了，是机器经济的硬通货，Agent博弈的最终清算抵押品。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "我知道你要说这个。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "那你呢？",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "两个。第一稳定币发行方，每笔Agent微支付都经过稳定币，这已经在发生了，不是预测。第二算力衍生品中间件，能把算力转成标准远期合约的协议。Agent要锁定未来推理成本，刚需。航空公司都做燃油对冲，Agent经济规模可能比航空业大一百倍。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "你刚不是说推土机前捡硬币吗，你自己也在押注啊。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "我押的是卖铲子的人。做衍生品的不管涨跌都赚手续费。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "聪明。最大的风险呢？一人一句。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "科技巨头建成封闭生态，绕过所有去中心化协议。ETH变成理想主义者的纪念品。",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "没有熔断机制就搞大规模商用。第一次机器级闪崩，整个行业倒退三年。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "我补一个。普通人被彻底排除在外。Agent经济轰轰烈烈，跟大多数人没关系。那就是另一个华尔街，只不过连人都不需要了。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "嗯……",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "好今天这期挺有意思。总结一下啊——AI推理token正在变成新的大宗商品，但天然气还是茅台没定论。Agent经济需要身份、支付、风控这一整套基础设施，crypto可能是唯一选择，但巨头不会坐看。最吓人的不是技术问题是社会问题——谁拥有Agent谁拥有未来。我们这些还在用手打字的人嘛，可能已经是上一个时代的生物了。",
+      "speakerId": "CN-Man-Beijing-V2"
+    },
+    {
+      "content": "先活下来再说。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "拉长时间看——",
+      "speakerId": "suzhe-45bbbe54"
+    },
+    {
+      "content": "你再说\"拉长时间看\"我把你麦拔了。",
+      "speakerId": "gaoqing3-bfb5c88a"
+    },
+    {
+      "content": "哈哈哈哈！好这期就到这儿！",
+      "speakerId": "CN-Man-Beijing-V2"
+    }
+  ]
+}
