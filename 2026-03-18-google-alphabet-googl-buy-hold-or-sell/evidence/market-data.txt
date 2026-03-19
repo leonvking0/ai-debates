@@ -1,0 +1,49 @@
+Captured: 2026-03-18 23:48 UTC
+
+## market-data.sh
+=== VERIFIED MARKET DATA (2026-03-18 23:48 UTC) ===
+⚠️ USE THESE EXACT NUMBERS IN THE BRIEF. DO NOT SUBSTITUTE WITH YOUR OWN KNOWLEDGE.
+
+## PRICES & 24H CHANGES
+🔴 BTC: $71,287.00 (-3.7% 24h) | MCap: $1425.8B | Vol: $47506M
+🔴 ETH: $2,203.87 (-5.1% 24h) | MCap: $265.8B | Vol: $24547M
+🔴 SOL: $90.05 (-5.1% 24h) | MCap: $51.5B | Vol: $4123M
+🟢 HYPE: $42.10 (+2.0% 24h) | MCap: $10.0B | Vol: $588M
+🔴 PENDLE: $1.26 (-6.4% 24h) | MCap: $0.2B | Vol: $23M
+🔴 ENA: $0.1082 (-7.3% 24h) | MCap: $0.9B | Vol: $105M
+🔴 DYDX: $0.0891 (-5.4% 24h) | MCap: $0.0B | Vol: $6M
+
+## GLOBAL MARKET
+Total Market Cap: $2.53T (🔴 -3.1% 24h)
+Total Volume 24h: $115B
+BTC Dominance: 56.5% | ETH Dominance: 10.5%
+
+## STABLECOIN SUPPLY
+  USDT: $184.1B
+  USDC: $79.4B
+  DAI: $4.3B
+  USDe: $5.9B
+  Total tracked: $273.7B
+
+## ETH GAS
+  Gas data unavailable (API key may be needed)
+
+## TRENDING (CoinGecko)
+  🔴 NEIRO: -6.7% 24h
+  🔴 KAT: -29.2% 24h
+  🟢 HYPE: +1.7% 24h
+  🔴 BTC: -3.7% 24h
+  🔴 ETH: -5.2% 24h
+  🟢 RIVER: +19.1% 24h
+  🔴 SOL: -5.1% 24h
+
+## SENTIMENT
+🟠 Fear & Greed Index: 26 (Fear)
+
+=== END MARKET DATA ===
+⚠️ REMINDER: All prices above are from CoinGecko/Alternative.me APIs at 23:48 UTC. Use them verbatim.
+
+## Yahoo Finance Chart (GOOGL)
+Edge: Too Many Requests
+
+WARNING: Failed to parse Yahoo Finance response for GOOGL.

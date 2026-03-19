@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Roundtable Debates</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0e1a;
+      --panel: rgba(15, 23, 42, 0.74);
+      --panel-strong: rgba(10, 14, 26, 0.9);
+      --border: rgba(148, 163, 184, 0.18);
+      --text: #e5eefc;
+      --muted: #94a3b8;
+      --gemini: #06b6d4;
+      --gemini-soft: rgba(6, 182, 212, 0.18);
+      --claude: #a855f7;
+      --claude-soft: rgba(168, 85, 247, 0.18);
+      --codex: #10b981;
+      --codex-soft: rgba(16, 185, 129, 0.18);
+      --neutral-soft: rgba(148, 163, 184, 0.14);
+      --buy: #10b981;
+      --hold: #f59e0b;
+      --sell: #ef4444;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      background:
+        radial-gradient(circle at top left, rgba(6, 182, 212, 0.18), transparent 28%),
+        radial-gradient(circle at top right, rgba(168, 85, 247, 0.18), transparent 24%),
+        radial-gradient(circle at bottom center, rgba(16, 185, 129, 0.12), transparent 26%),
+        linear-gradient(180deg, #0a0e1a 0%, #090d18 42%, #070b14 100%);
+      color: var(--text);
+      font-family: "Inter", sans-serif;
+    }
+
+    code,
+    pre {
+      font-family: "JetBrains Mono", monospace;
+    }
+
+    .ambient {
+      position: fixed;
+      z-index: 0;
+      border-radius: 9999px;
+      filter: blur(68px);
+      opacity: 0.18;
+      pointer-events: none;
+    }
+
+    .ambient-a {
+      top: 5rem;
+      left: -4rem;
+      width: 18rem;
+      height: 18rem;
+      background: rgba(6, 182, 212, 0.6);
+    }
+
+    .ambient-b {
+      top: 20rem;
+      right: -4rem;
+      width: 20rem;
+      height: 20rem;
+      background: rgba(168, 85, 247, 0.42);
+    }
+
+    .ambient-c {
+      bottom: -3rem;
+      left: 30%;
+      width: 22rem;
+      height: 22rem;
+      background: rgba(16, 185, 129, 0.28);
+    }
+
+    .glass {
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.04));
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 1px solid var(--border);
+      box-shadow: 0 18px 48px rgba(2, 6, 23, 0.34);
+    }
+
+    .section-kicker {
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      color: rgba(148, 163, 184, 0.88);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .verdict-card[data-rating="BUY"] {
+      box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.24), 0 0 42px rgba(16, 185, 129, 0.2);
+    }
+
+    .verdict-card[data-rating="HOLD"] {
+      box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.24), 0 0 42px rgba(245, 158, 11, 0.18);
+    }
+
+    .verdict-card[data-rating="SELL"] {
+      box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.24), 0 0 42px rgba(239, 68, 68, 0.18);
+    }
+
+    .rating-badge,
+    .score-pill {
+      border: 1px solid transparent;
+    }
+
+    .rating-badge[data-rating="BUY"] {
+      color: #a7f3d0;
+      background: rgba(16, 185, 129, 0.15);
+      border-color: rgba(16, 185, 129, 0.28);
+    }
+
+    .rating-badge[data-rating="HOLD"] {
+      color: #fde68a;
+      background: rgba(245, 158, 11, 0.15);
+      border-color: rgba(245, 158, 11, 0.28);
+    }
+
+    .rating-badge[data-rating="SELL"] {
+      color: #fecaca;
+      background: rgba(239, 68, 68, 0.15);
+      border-color: rgba(239, 68, 68, 0.28);
+    }
+
+    .score-pill[data-band="high"] {
+      color: #a7f3d0;
+      background: rgba(16, 185, 129, 0.14);
+      border-color: rgba(16, 185, 129, 0.26);
+    }
+
+    .score-pill[data-band="mid"] {
+      color: #fde68a;
+      background: rgba(245, 158, 11, 0.14);
+      border-color: rgba(245, 158, 11, 0.26);
+    }
+
+    .score-pill[data-band="low"] {
+      color: #fecaca;
+      background: rgba(239, 68, 68, 0.14);
+      border-color: rgba(239, 68, 68, 0.26);
+    }
+
+    .conviction-badge {
+      width: 4.5rem;
+      height: 4.5rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      display: grid;
+      place-items: center;
+      background: rgba(255, 255, 255, 0.03);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    }
+
+    .conviction-badge[data-band="high"] {
+      color: #a7f3d0;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 0 24px rgba(16, 185, 129, 0.16);
+      border-color: rgba(16, 185, 129, 0.24);
+    }
+
+    .conviction-badge[data-band="mid"] {
+      color: #fde68a;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 0 24px rgba(245, 158, 11, 0.14);
+      border-color: rgba(245, 158, 11, 0.24);
+    }
+
+    .conviction-badge[data-band="low"] {
+      color: #fecaca;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 0 24px rgba(239, 68, 68, 0.12);
+      border-color: rgba(239, 68, 68, 0.24);
+    }
+
+    .agent-theme[data-agent="gemini"] {
+      --agent-color: var(--gemini);
+      --agent-soft: var(--gemini-soft);
+    }
+
+    .agent-theme[data-agent="claude"] {
+      --agent-color: var(--claude);
+      --agent-soft: var(--claude-soft);
+    }
+
+    .agent-theme[data-agent="codex"] {
+      --agent-color: var(--codex);
+      --agent-soft: var(--codex-soft);
+    }
+
+    .agent-theme[data-agent="neutral"] {
+      --agent-color: #cbd5e1;
+      --agent-soft: var(--neutral-soft);
+    }
+
+    .agent-accent {
+      background: linear-gradient(180deg, var(--agent-color), transparent);
+      box-shadow: 0 0 24px var(--agent-soft);
+    }
+
+    .agent-chip {
+      color: var(--agent-color);
+      background: var(--agent-soft);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    .timeline-shell {
+      position: relative;
+    }
+
+    .timeline-shell::before {
+      content: "";
+      position: absolute;
+      left: 1.1rem;
+      top: 0.75rem;
+      bottom: 0.75rem;
+      width: 1px;
+      background: linear-gradient(180deg, rgba(6, 182, 212, 0.4), rgba(148, 163, 184, 0.08), rgba(168, 85, 247, 0.35));
+    }
+
+    .timeline-item {
+      position: relative;
+      padding-left: 3.4rem;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: 0.6rem;
+      top: 1.5rem;
+      width: 1rem;
+      height: 1rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.8), rgba(168, 85, 247, 0.75));
+      box-shadow: 0 0 16px rgba(6, 182, 212, 0.32);
+    }
+
+    .phase-toggle svg {
+      transition: transform 0.25s ease;
+    }
+
+    .phase-toggle[data-open="true"] svg {
+      transform: rotate(180deg);
+    }
+
+    .tab-button {
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      background: rgba(15, 23, 42, 0.48);
+      color: rgba(226, 232, 240, 0.88);
+      transition: all 0.25s ease;
+    }
+
+    .tab-button.is-active {
+      border-color: rgba(255, 255, 255, 0.16);
+      background: rgba(255, 255, 255, 0.09);
+      color: #fff;
+      box-shadow: 0 12px 24px rgba(2, 6, 23, 0.22);
+    }
+
+    .tab-panel {
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    .tab-panel[hidden] {
+      display: none !important;
+    }
+
+    .claim-pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 9999px;
+      padding: 0.18rem 0.6rem;
+      margin: 0 0.12rem;
+      font-size: 0.78em;
+      font-weight: 700;
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+      border: 1px solid transparent;
+      vertical-align: baseline;
+    }
+
+    .claim-pill[data-claim-agent="gemini"] {
+      color: #67e8f9;
+      background: rgba(6, 182, 212, 0.16);
+      border-color: rgba(6, 182, 212, 0.28);
+    }
+
+    .claim-pill[data-claim-agent="claude"] {
+      color: #d8b4fe;
+      background: rgba(168, 85, 247, 0.16);
+      border-color: rgba(168, 85, 247, 0.28);
+    }
+
+    .claim-pill[data-claim-agent="codex"] {
+      color: #86efac;
+      background: rgba(16, 185, 129, 0.16);
+      border-color: rgba(16, 185, 129, 0.28);
+    }
+
+    .claim-pill[data-claim-agent="neutral"] {
+      color: #e2e8f0;
+      background: rgba(148, 163, 184, 0.14);
+      border-color: rgba(148, 163, 184, 0.24);
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="ambient ambient-c"></div>
+  <div class="relative z-10 min-h-screen pb-16">
+    <main class="mx-auto max-w-7xl px-5 pt-8 sm:px-6 lg:px-8">
+      <section class="glass reveal overflow-hidden rounded-[2rem] p-8 md:p-10">
+        <p class="section-kicker">Archive</p>
+        <h1 class="mt-4 max-w-4xl text-4xl font-semibold leading-tight text-white md:text-6xl md:leading-[1.05]">AI roundtable debates, rendered as a living archive.</h1>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200">7 debates</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200">44801 words</span>
+        </div>
+        <p class="mt-6 max-w-3xl text-sm leading-7 text-slate-300">Each card opens a self-contained debate page with verdicts, personas, collapsible phases, claim tracking, and synthesis sections.</p>
+      </section>
+      <section class="mt-12">
+        <div class="mb-6 flex items-end justify-between gap-4">
+          <div>
+            <p class="section-kicker">Debates</p>
+            <h2 class="mt-2 text-3xl font-semibold text-white">Browse the archive.</h2>
+          </div>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+      <a class="glass reveal group block rounded-[1.75rem] p-6 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.075]" href="./2026-03-18-should-crypto-projects-prioritize-decentralization-or-user-experience-in-2026-th/index.html">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="section-kicker">2026-03-18</p>
+            <h2 class="mt-3 text-2xl font-semibold leading-tight text-white transition group-hover:text-cyan-200">Should crypto projects prioritize decentralization or user experience in 2026? The tension between trustless infrastructure and mainstream adoption.</h2>
+          </div>
+          <span class="rating-badge inline-flex shrink-0 items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]" data-rating="BUY">BUY</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-300">
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Codex · Gemini</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">3998 words</span>
+        </div>
+      </a>
+      <a class="glass reveal group block rounded-[1.75rem] p-6 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.075]" href="./2026-03-18-google-alphabet-googl-buy-hold-or-sell/index.html">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="section-kicker">2026-03-18</p>
+            <h2 class="mt-3 text-2xl font-semibold leading-tight text-white transition group-hover:text-cyan-200">Google / Alphabet (GOOGL) — Buy, Hold, or Sell?</h2>
+          </div>
+          <span class="rating-badge inline-flex shrink-0 items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]" data-rating="BUY">BUY</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-300">
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Claude · Codex · Gemini</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">2737 words</span>
+        </div>
+      </a>
+      <a class="glass reveal group block rounded-[1.75rem] p-6 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.075]" href="./2026-03-18-coinbase-global-coin-buy-hold-or-sell/index.html">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="section-kicker">2026-03-18</p>
+            <h2 class="mt-3 text-2xl font-semibold leading-tight text-white transition group-hover:text-cyan-200">Coinbase Global (COIN) — Buy, Hold, or Sell?</h2>
+          </div>
+          <span class="rating-badge inline-flex shrink-0 items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]" data-rating="BUY">CAUTIOUS BUY</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-300">
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Claude · Codex · Gemini</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">8723 words</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Target $245.00 - $260.00</span>
+        </div>
+      </a>
+      <a class="glass reveal group block rounded-[1.75rem] p-6 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.075]" href="./2026-03-18-circle-internet-group-cirl-buy-hold-or-sell/index.html">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="section-kicker">2026-03-18</p>
+            <h2 class="mt-3 text-2xl font-semibold leading-tight text-white transition group-hover:text-cyan-200">Circle Internet Group (CIRL) — Buy, Hold, or Sell?</h2>
+          </div>
+          <span class="rating-badge inline-flex shrink-0 items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]" data-rating="SELL">SELL</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-300">
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Claude · Codex · Gemini</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">7569 words</span>
+        </div>
+      </a>
+      <a class="glass reveal group block rounded-[1.75rem] p-6 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.075]" href="./roundtable-ai-consciousness/index.html">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="section-kicker">Undated</p>
+            <h2 class="mt-3 text-2xl font-semibold leading-tight text-white transition group-hover:text-cyan-200">议题：AI意识不可验证 — 科幻与哲学的交汇</h2>
+          </div>
+          <span class="rating-badge inline-flex shrink-0 items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]" data-rating="MIXED">Mixed</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-300">
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Claude · Codex · Gemini</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">723 words</span>
+        </div>
+      </a>
+      <a class="glass reveal group block rounded-[1.75rem] p-6 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.075]" href="./roundtable-agent-economy/index.html">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="section-kicker">Undated</p>
+            <h2 class="mt-3 text-2xl font-semibold leading-tight text-white transition group-hover:text-cyan-200">圆桌讨论主题：AI计算Token与Agent经济学</h2>
+          </div>
+          <span class="rating-badge inline-flex shrink-0 items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]" data-rating="MIXED">Mixed</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-300">
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">macro-strategist · political-economist · risk-manager</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">962 words</span>
+        </div>
+      </a>
+      <a class="glass reveal group block rounded-[1.75rem] p-6 transition hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.075]" href="./agentic-economy/index.html">
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="section-kicker">Undated</p>
+            <h2 class="mt-3 text-2xl font-semibold leading-tight text-white transition group-hover:text-cyan-200">AI Economy 畅想</h2>
+          </div>
+          <span class="rating-badge inline-flex shrink-0 items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em]" data-rating="MIXED">Mixed</span>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-3 text-sm text-slate-300">
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">Claude · Codex · Gemini</span>
+          <span class="rounded-full border border-white/10 bg-white/5 px-3 py-1">20089 words</span>
+        </div>
+      </a>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const observers = document.querySelectorAll(".reveal");
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      observers.forEach((node) => io.observe(node));
+
+      document.querySelectorAll("[data-collapse-button]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const target = document.getElementById(button.dataset.collapseButton);
+          if (!target) return;
+          const isOpen = button.dataset.open === "true";
+          button.dataset.open = String(!isOpen);
+          button.setAttribute("aria-expanded", String(!isOpen));
+          target.hidden = isOpen;
+        });
+      });
+
+      const setActiveTab = (group, targetId) => {
+        group.querySelectorAll("[data-tab-button]").forEach((button) => {
+          const active = button.dataset.tabButton === targetId;
+          button.classList.toggle("is-active", active);
+          button.setAttribute("aria-selected", String(active));
+        });
+
+        group.querySelectorAll("[data-tab-panel]").forEach((panel) => {
+          panel.hidden = panel.dataset.tabPanel !== targetId;
+        });
+      };
+
+      document.querySelectorAll("[data-tab-group]").forEach((group) => {
+        const buttons = group.querySelectorAll("[data-tab-button]");
+        if (buttons.length === 0) return;
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            setActiveTab(group, button.dataset.tabButton);
+          });
+        });
+
+        const active = group.querySelector("[data-tab-button].is-active") || buttons[0];
+        setActiveTab(group, active.dataset.tabButton);
+      });
+
+      const claimMarkup = (text, agent) => {
+        const resolvedAgent = (agent || "neutral").toLowerCase();
+        return `<span class="claim-pill" data-claim-agent="${resolvedAgent}">${text}</span>`;
+      };
+
+      document.querySelectorAll(".markdown-body").forEach((container) => {
+        if (container.dataset.claimsEnhanced === "true") return;
+
+        const fallbackAgent = container.dataset.agent || "neutral";
+        const replacements = [];
+        let html = container.innerHTML;
+
+        html = html.replace(/\b(gemini|claude|codex)\/(claim-\d+)\b/gi, (match, agent) => {
+          const token = `__CLAIM_TOKEN_${replacements.length}__`;
+          replacements.push(claimMarkup(match.toLowerCase(), agent));
+          return token;
+        });
+
+        html = html.replace(/(\[claim-\d+\]|\bclaim-\d+\b)/gi, (match) => {
+          const token = `__CLAIM_TOKEN_${replacements.length}__`;
+          const clean = match.replace(/[\[\]]/g, "").toLowerCase();
+          replacements.push(claimMarkup(clean, fallbackAgent));
+          return token;
+        });
+
+        replacements.forEach((markup, index) => {
+          html = html.replace(`__CLAIM_TOKEN_${index}__`, markup);
+        });
+
+        container.innerHTML = html;
+        container.dataset.claimsEnhanced = "true";
+      });
+    });
+  </script>
+</body>
+</html>
